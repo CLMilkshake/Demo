@@ -1,0 +1,67 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+.slider-frame{
+    display: flex;
+    overflow: hidden;
+    width: 130%;
+    margin-top: 50px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+
+@keyframes slide_animation{
+    0% {left:475px;}
+    10% {left:475px;}
+    20% {left:1675px;}
+    30% {left:1675px;}
+    40% {left: 2875px;}
+    50% {left: 2875px;}
+    60% {left: 2875px;}
+    70% {left: 1675px;}
+    80% {left: 1675px;}
+    90% {left: 475px;}
+    100% {left:475px;}
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:475px;}
+    10% {left:475px;}
+    20% {left:1675px;}
+    30% {left:1675px;}
+    40% {left: 2875px;}
+    50% {left: 2875px;}
+    60% {left: 2875px;}
+    70% {left: 1675px;}
+    80% {left: 1675px;}
+    90% {left: 475px;}
+    100% {left:475px;}
+}
+
+.slide-images{
+    width: 5000px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    animation-duration:33s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
